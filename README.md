@@ -1,7 +1,7 @@
 # Visualizing Snowflake usage
 
 Snowflake is a data warehouse built for the cloud, it offers an unique solution of having a multi compute 
-cluster over a shared storage layer, managed by a centeralized metadata store. It offers a unlimited virtually
+cluster over a shared storage layer, managed by a centralized metadata store. It offers a unlimited virtually
 elastic compute cluster instances called warehouses operating on top of a virtually unlimited storage.
 
 ![](./images/snowflake_architecture.jpg)
@@ -14,7 +14,7 @@ Here are some stats from a recent interaction that we got from snowflake.
 | Single customer most data  |  > 40 PB  |
 |  Single customer most users | > 36,000  |
 
-Patterns do exists where by a single snowflake account can accomadate multi-tenant functionality too. You 
+Patterns do exists where by a single snowflake account can accommodate multi-tenant functionality too. You 
 could literally host all of your structured data from your data lake into snowflake.
 
 As your enterprise starts utilizing snowflake more and more; you might be asking:
@@ -67,7 +67,7 @@ effectively to larger audience like dev manager, business leaders, security admi
 For example; here is a screenshot of roles hierarchy, via the show roles command. 
 ![](./images/show_roles.jpg)
 
-You can get the list of users and thier granted roles via a combination of 'SHOW Users' and 'Show grants to user' command. 
+You can get the list of users and their granted roles via a combination of 'SHOW Users' and 'Show grants to user' command. 
 Here is a screenshot of 'Show GRANTS TO USER'
 
 ![](./images/show_grant_touser.jpg)
@@ -77,7 +77,7 @@ snowflake it might be ok to do it via hand, as more and more data is brought int
 are actively using snowflake it becomes harder to visualize and explain to team.
 
 A visual representation like a tree, Sanskey ,chord ,heatmap diagram speaks a thousand words. Example here is a visual 
-representation of above scenario of users/roles and thier hierarchy.
+representation of above scenario of users/roles and their hierarchy.
 ![](./images/user_roles_relationship.png)
 
 If you are able to quickly infer that there is an issue, from the above screenshot (multiple users have an AccountAdmin 
@@ -163,11 +163,11 @@ taking a snapshot of the users dataset.
 
 #### Views
 
-The following are some of the views that I have built so far. If interested you can read them in thier individual notebooks
+The following are some of the views that I have built so far. If interested you can read them in their individual notebooks
 on how they were built
 
 ##### __View : user role hierarchy__
- Visualize role hierarchy and map users to thier role
+ Visualize role hierarchy and map users to their role
  
  ![](./images/user_roles_relationship.png)  
 
@@ -196,7 +196,7 @@ and so on.
 ##### __View : Relation among tables__
 
 The tables can have foreign key relationships, however snowflake does not enforce them. Irrespective of foreign key 
-relationships, tables gets joined and thier usage can be interpreted based on the query statement. These join may occur 
+relationships, tables gets joined and their usage can be interpreted based on the query statement. These join may occur 
 due to natural matching keys, example ids or not so natural keys ,like using the like /in operators.
 
 Inspecting issued query statements provides a way of determine the relationships among tables. They could answer queries 
@@ -221,7 +221,7 @@ performed
 
 ![](./images/users_warehouse_interaction.jpg)
 
-Using this we could potentially identify if users are utilizing only a large size warehouse for all thier work and if
+Using this we could potentially identify if users are utilizing only a large size warehouse for all their work and if
 we could divert them to smaller size ,to potentially save credits.
 
 ### Continuity
