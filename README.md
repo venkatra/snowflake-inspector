@@ -175,7 +175,7 @@ on how they were built
 
 ##### __View : warehouse utilization__
 
-The [WAREHOUSE_METERING_HISTORY(https://docs.snowflake.net/manuals/sql-reference/functions/warehouse_metering_history.html#warehouse-metering-history)
+The [WAREHOUSE_METERING_HISTORY](https://docs.snowflake.net/manuals/sql-reference/functions/warehouse_metering_history.html#warehouse-metering-history)
 return the hourly credit usage. During the usage, the warehouse could be resized up and down. The [Query_History](https://docs.snowflake.net/manuals/sql-reference/account-usage/query_history.html#query-history-view)
 does offer some information on the size of the warehouse when a specific query was issued. Though there are some gaps, 
 I am assuming that the size will retain previous record size.
