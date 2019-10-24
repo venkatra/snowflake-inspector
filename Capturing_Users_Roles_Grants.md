@@ -1,5 +1,5 @@
 # Capturing USERS ,ROLES and GRANTS of SNOWFLAKE into a table
-
+to change this later
 ## Overview
 If you have been snowflake for quiet some time, you would have realized
 that retrieving the users, roles, grants is not direct. For some reason,
